@@ -74,8 +74,11 @@
                         echo "<b>Votre compte na pas pu être creer <b>";
                     }else
                         {
-                            
-                            echo '<div><b>Votre à bien était crée <b></div>';
+                            echo '<div><b>Votre compte à bien était crée <b></div>';
+
+                            $_SESSION['user_email']= $cliMail;
+
+                            header("Location:myProfile.php");
                         }
             
                     }

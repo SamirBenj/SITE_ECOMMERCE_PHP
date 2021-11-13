@@ -13,7 +13,13 @@
     <a href="login.php">Connexion</a>
     <a href="register.php">Inscription</a>
 
-    
+    <?php 
+        if($_SESSION['user_email']){
+            echo "Un client est connecté";
+        }else {
+            echo "Veuillez vous connecter/inscire";
+        }
+    ?>
     <div class="Categorie">
         <?php
             $affichageCategorie = new Functions();

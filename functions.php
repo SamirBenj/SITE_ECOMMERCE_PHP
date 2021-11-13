@@ -12,11 +12,13 @@
             $query = $connect -> prepare($sql);
             $queryIsOk = $query -> execute();
             if($queryIsOk){
-                echo "it 's working ";
-                echo "<br>";
+                // echo "it 's working ";
+                // echo "<br>";
                 while($row = $query -> fetch(PDO::FETCH_OBJ)){
                     echo "<div id='produitSeule'>";
-                    echo "<h3>Nom du produit: </h3>".$row->prodNom."</br>";
+                        echo "<div>";
+                        echo "<h3>Nom du produit: </h3><p>".$row->prodNom."<p></br>";
+                        echo "</div>";
                     echo "</div>";
                 }
             }else {
@@ -33,8 +35,8 @@
             $query = $connect -> prepare($sql);
             $queryIsOk = $query -> execute();
             if($queryIsOk){
-                echo "it 's working catégorie ";
-                echo "<br>";
+                // echo "it 's working catégorie ";
+                // echo "<br>";
                 while($row = $query -> fetch(PDO::FETCH_OBJ)){
                     echo $row;
                     echo "<div id='categorieSeul'>";

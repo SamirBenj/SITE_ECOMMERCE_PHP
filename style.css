@@ -1,8 +1,12 @@
-/* .produitsRecent{
-    text-align: center;
+.produitsRecent{
+    /* text-align: center; */
     background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px,auto;
 }
 #produitSeule{
     
     background-color: rgb(41, 241, 175);
-} */
+}∏

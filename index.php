@@ -36,6 +36,10 @@
             echo "Veuillez vous connecter/inscire";
         }
     ?>
+
+        <div>
+
+        </div>
     <div class="Categorie">
         <?php
             $affichageCategorie = new Functions();
@@ -44,14 +48,14 @@
     </div>
 
     <div class="produitsRecent">
-    <?php
-        
-        $affichageProduit = new Functions();
-        $affichageProduit -> affichagesProduits();
-        
-    ?>
+        <?php
+            
+            $affichageProduit = new Functions();
+            $affichageProduit -> affichagesProduits();
+            
+        ?>
+    </div>
 
-</div>
         <link rel="stylesheet" href="style.css">
 
 </body>

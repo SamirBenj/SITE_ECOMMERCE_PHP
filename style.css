@@ -5,15 +5,17 @@ html{
 }
 .produitsRecent{
     /* text-align: center; */
-    background-color: aquamarine;
+    /* background-color: rgba(89, 89, 238, 0.719); */
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 10px;
     grid-auto-rows: 100px,auto;
 }
 #produitSeule{
+    border-radius: 10px;
+    padding: 10px;
     
-    background-color: rgb(41, 241, 175);
+    background-color: rgba(89, 89, 238, 0.274);
 }
 
 

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>HomePage</title>
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <link href="./fonts/css/all.css" rel="stylesheet"> <!--load all styles -->
+        <title>HomePage</title>
 </head>
 <body>
 <?php include_once 'functions.php';?>
@@ -15,19 +17,22 @@
         <li>Mes Favoris</li>
         <li>Se connecter</li>
 
-    </ul> -->
+    <!-- </ul> --> -->
     <div id="navigationBar">
    
         <a href="index.php">Accueil</a>
         <a href="myProfile.php">Mon Profile</a>
         <a href="login.php">Se connecter</a>
-        <a href="Mes Favoris">Favoris</a>
-
+        <!-- <a href="Mes Favoris">Favoris</a> -->
+        <!-- <div class="topNavRight" style="float:left"> -->
+            <a style="float:left; background-color:rgb(169,169,169); margin:-15px; margin-left 10px;">Hello</a>
+        <!-- </div> -->
     </div>
     <br>
     <!-- <h1 style="text-align:center;">PMU</h1> -->
     <!-- <a href="login.php">Connexion</a>
     <a href="register.php">Inscription</a> -->
+
 
     <?php 
         if($_SESSION['user_email']){
@@ -56,7 +61,8 @@
         ?>
     </div>
 
-        <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
 
 </body>
 </html>

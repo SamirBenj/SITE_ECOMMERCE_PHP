@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+
+html {
+    background-color: white;
+}
+form { 
+    margin: 0 auto; 
+    }
+
+form {
+    background-color: #F0F1F3;
+    width: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    padding: 70px;
+}
+.loginForm {
+    /* background-color: #F0F1F3;
+    width: fit-content;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px; */
+}
+
+.loginForm input {
+    background-color: rgba(189, 109, 109, 0.36);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+.loginForm input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 10px;
+    font-style: italic;
+}
+
+
+
+#selfForm ,td {
+    font-family: 'Montserrat', sans-serif;
+
+}

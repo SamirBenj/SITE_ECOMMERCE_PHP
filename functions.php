@@ -17,7 +17,12 @@
                 while($row = $query -> fetch(PDO::FETCH_OBJ)){
                     echo "<div id='produitSeule'>";
                         echo "<div>";
-                        echo "<h3>Nom du produit: </h3><p>".$row->prodNom."<p></br>";
+                        echo "<img src='./ImageProduits/bague.jpg'></img>";
+                        echo "<h3>$row->prodNom</h3>";
+                        echo "<p>$row->prodDescription</p>";
+
+                        echo "<button type='submit' ><span>Ajouter au Panier</span> <span <i class='fas fa-cart-arrow-down' </span> ";
+                        //<img width ='10px'src='./icon/cart.svg'>
                         echo "</div>";
                     echo "</div>";
                 }
@@ -38,7 +43,7 @@
                 // echo "it 's working catégorie ";
                 // echo "<br>";
                 while($row = $query -> fetch(PDO::FETCH_OBJ)){
-                    echo $row;
+                    // echo $row;
                     echo "<div id='categorieSeul'>";
                     echo "<h3>Nom categorie: </h3>".$row->categNom."</br>";
                     echo "</div>";

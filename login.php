@@ -4,14 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleLoginRegister.css">
     <title>Document</title>
 </head>
 <body>
 <h2></h2>
-    
-    <div class="">
 
-        <form action="" method="POST">
+    <div id="navigationBar">
+    
+        <a href="index.php">Accueil</a>
+        <a href="myProfile.php">Mon Profile</a>
+        <a href="login.php">Se connecter</a>
+        <!-- <a href="Mes Favoris">Favoris</a> -->
+        <!-- <div class="topNavRight" style="float:left"> -->
+            <a style="float:left; background-color:rgb(169,169,169); margin:-15px; margin-left 10px;">Hello</a>
+        <!-- </div> -->
+    </div>
+    <br>
+    <div class="loginForm">
+
+        <form id="selfForm" align="center" action="" method="POST">
             <td>Entrer votre Adresse Mail </td>
             </br></br>
             <input type="text" name="cliMail" placeholder="Votre Adresse Mail">

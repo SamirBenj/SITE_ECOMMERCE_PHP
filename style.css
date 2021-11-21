@@ -5,10 +5,12 @@ html{
 
 }
 .produitsRecent{
+    float: left;
+    width: 75%;
     text-align: center;
     /* background-color: rgba(89, 89, 238, 0.719); */
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
     grid-auto-rows: 100px,auto;
 }
@@ -50,6 +52,7 @@ html{
 }
 
 #navigationBar a {
+    border-radius: 10px;
     /* background-color: rgba(89, 89, 238, 0.719); */
     background-color:  rgba(189, 109, 109, 0.36);
     color: white;
@@ -62,5 +65,60 @@ html{
 }
 
 #navigationBar a:hover {
-    background-color: rgba(89, 89, 238, 0.89);
+    /* background-color: rgba(89, 89, 238, 0.89); */
+    background-color:rgb(189, 109, 109);
+}
+
+#navigationBar input {
+    border-style: none;
+    background-color: rgb(169,169,169);
+}
+.categorie a {
+    background-color: rgba(170, 170, 170, 0.22);
+    padding: 9px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+.categorie {
+    margin: 15px;
+    text-align: center;
+}
+
+
+#rightBox {
+    float: right;
+    text-align: center;
+    background: rgb(169,169,169);
+    width: 22%;
+    border-radius: 36px;
+    height: 130vh;
+
+}
+
+#rightBox h2{
+    font-family: 'MontserratBold';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "MontserratSemiBoldItalic";
+    src: url("Montserrat/Montserrat-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: "MontserratItalic";
+    src: url("Montserrat/Montserrat-Italic.ttf");
+}
+@font-face {
+    font-family: "MontserratBold";
+    src: url("Montserrat/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "MontserratBoldItalic";
+    src: url("Montserrat/Montserrat-BoldItalic.ttf");
 }

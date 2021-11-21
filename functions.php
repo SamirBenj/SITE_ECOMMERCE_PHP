@@ -44,16 +44,45 @@
                 // echo "<br>";
                 while($row = $query -> fetch(PDO::FETCH_OBJ)){
                     // echo $row;
-                    echo "<div id='categorieSeul'>";
-                    echo "<h3>Nom categorie: </h3>".$row->categNom."</br>";
-                    echo "</div>";
+                    // echo "<div id='categorieSeul'>";
+                    // echo "<h3>Nom categorie: </h3>".$row->categNom."</br>";
+                    // echo "</div>";
                 }
             }else {
                 echo "not working";
             }
         }
         
-        
+       
+public function affichageVente(){
+
+    $classConnect = new Db();
+    $connect = $classConnect -> connection();
+    $sql = "SELECT  * FROM Vente";
+    $query = $connect -> prepare($sql);
+
+    $queryIsOk = $query -> execute();
+   
+    if($queryIsOk){
+    while($ligne = $query->fetch(PDO::FETCH_OBJ)){
+
+        // echo $ligne;    
+        // echo "<div id='vente'>";
+        // echo "<h3>DerniÃ¨rs ventes </h3>".$ligne->ventNom."</br>";
+        // echo "</div>";
+            
+        echo ' <div id="produitVente">';
+            echo '<img src="./ImageProduits/bague.jpg" alt="">';
+                echo '<div id="info">';
+                    echo '<h4>'.$ligne -> ventNomProduit.'</h4>';
+                    echo '<h5>'.$ligne -> ventPrix.'</h5>';
+                echo '</div>';
+        echo '</div>';
+    }
+    }else{
+        echo "not working";
+         }
+        } 
 
     }
 

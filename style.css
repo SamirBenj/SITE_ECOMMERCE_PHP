@@ -93,19 +93,38 @@ html{
 #rightBox {
     float: right;
     text-align: center;
-    background: rgb(169,169,169);
+    /* background: rgb(169,169,169); */
+    background-color: rgba(170, 170, 170, 0.74);
     width: 22%;
     border-radius: 36px;
     height: 130vh;
+    padding: 10px;
 
 }
 
 #rightBox h2{
     font-family: 'MontserratBold';
     text-transform: uppercase;
-    font-weight: bold;
 }
 
+#eachProducts {
+    /* margin: 0 auto; */
+    margin: 10px;
+}
+ #produitVente {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    /* width: fit-content; */
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#produitVente img {
+    margin: 2px;
+}
+#info {
+    /* display: table-column; */
+}
 @font-face {
     font-family: "MontserratSemiBoldItalic";
     src: url("Montserrat/Montserrat-SemiBoldItalic.ttf");

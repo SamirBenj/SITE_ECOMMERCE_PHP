@@ -1,12 +1,12 @@
 <?php 
     include "db.php";
+              
 
     class Functions {
-
-        public function affichagesProduits(){
+      
+        public function affichagesProduits($variable){
             $classConnect = new Db();
             $connect = $classConnect -> connection();
-
             $sql = "SELECT * FROM Produit";
 
             $query = $connect -> prepare($sql);
@@ -15,16 +15,21 @@
                 // echo "it 's working ";
                 // echo "<br>";
                 while($row = $query -> fetch(PDO::FETCH_OBJ)){
+                    // $prodId = $row -> prodNum;
+                    $_SESSION['prodId'] = $row -> prodNum;
+                    $value =$row -> prodNum;
+                    echo "<form action='index.php?action=&id=$value'>";
                     echo "<div id='produitSeule'>";
                         echo "<div>";
                         echo "<img src='./ImageProduits/bague.jpg'></img>";
                         echo "<h3>$row->prodNom</h3>";
                         echo "<p>$row->prodDescription</p>";
 
-                        echo "<button type='submit' ><span>Ajouter au Panier</span> <span <i class='fas fa-cart-arrow-down' </span> ";
+                        echo "<input type='submit' name='submit' ><span>Ajouter au Panier</span> <span <i class='fas fa-cart-arrow-down' </span> ";
                         //<img width ='10px'src='./icon/cart.svg'>
                         echo "</div>";
                     echo "</div>";
+                    echo "</form>";
                 }
             }else {
                 echo "not working";
@@ -75,7 +80,7 @@ public function affichageVente(){
             echo '<img src="./ImageProduits/bague.jpg" alt="">';
                 echo '<div id="info">';
                     echo '<h4>'.$ligne -> ventNomProduit.'</h4>';
-                    echo '<h5>'.$ligne -> ventPrix.'</h5>';
+                    echo '<h5>'.$ligne -> ventPrix.' €</h5>';
                 echo '</div>';
         echo '</div>';
     }

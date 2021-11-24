@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleLoginRegister.css">
-    <link href="./fonts/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link href="./fonts/css/all.css" rel="stylesheet"> 
 
     <title>Document</title>
 </head>
@@ -28,7 +28,7 @@
         <form id="selfForm" align="center" action="" method="POST">
 
                 <!-- <h2>Me Connecter</h2> -->
-                        <i class="fas fa-user-circle"style=" font-size:100px; color:rgb(189, 109, 109);"></i>
+                     <i class="fas fa-user-circle"style=" font-size:100px; color:rgb(189, 109, 109);"></i>
 
             <!-- <td>Entrer votre Adresse Mail </td> -->
             </br></br>
@@ -73,7 +73,7 @@
                 echo '<b>Impossible de se connecter<b>';
             }else
                 {
-                    $_SESSION['user_email']= $cliMail;
+                    $_SESSION['user_email'] = $cliMail;
 
                     header("Location:myProfile.php");
                    

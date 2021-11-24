@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+h2 {
+    font-family: 'Montserrat';
+}
+
+.cardProfile {
+    /* background-color: rgba(169, 169, 169, 0.664);
+    text-align: center; */
+}
+
+.allInfo {
+    margin: 0 auto;
+    display: inline-flex;
+}
+.allInfo div{
+    background-color: rgb(189, 109, 109);
+    margin: 20px;
+}

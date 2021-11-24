@@ -10,7 +10,15 @@
         <title>HomePage</title>
 </head>
 <body>
-<?php include_once 'functions.php';?>
+<?php 
+    include_once 'functions.php';
+    if(isset($_POST["submit"])){
+        echo '<script>alert("Product is ")</script>';
+    }else {
+        // echo '<script>alert("Product is already Added to Cart")</script>';
+
+    }
+?>
     <!-- <ul>
         <li>Accueil</li>
         <li>Mon Profile</li>
@@ -23,7 +31,7 @@
         <a href="index.php">Accueil</a>
         <a href="myProfile.php">Mon Profile</a>
         <a href="login.php">Se connecter</a>
-        <input type="text" value="RECHERCHE"><span class="fas fa-search"> </span>
+        <input type="text" placeholder="Recherche...."><span class="fas fa-search"> </span>
         <!-- <a href="Mes Favoris">Favoris</a> -->
         <!-- <div class="topNavRight" style="float:left"> -->
             <a style="float:left; background-color:rgb(169,169,169); margin:-15px; margin-left 1px;">E-COMMERCE</a>
@@ -34,7 +42,7 @@
     <!-- <a href="login.php">Connexion</a>
     <a href="register.php">Inscription</a> -->
     <div class="categorie">
-        <a href="categ1.html">Categorie</a>
+        <a href="./categories/joint.php?nomCateg=joint">Joint</a>
         <a href="categ1.html">Categorie</a>
         <a href="categ1.html">Categorie</a>
         <a href="categ1.html">Categorie</a>
@@ -74,26 +82,14 @@
                         $affichageProduit = new Functions();
                         $affichageProduit -> affichageVente();
                     ?>
-                        <!-- <div id="produitVente">
-                        <img src="./ImageProduits/bague.jpg" alt="">
-                            <div id="info">
-                                <h4>Bague</h4> 
-                                <h5>6,60 €</h5>
-                            </div>
-                    </div> -->
-                        <!-- <div id="produitVente">
-                        <img src="./ImageProduits/bague.jpg" alt="">
-                        <h4>Bague</h4>
-                        <h5>6,60 €</h5>
-                    </div>
-                        <div id="produitVente">
-                        <img src="./ImageProduits/bague.jpg" alt="">
-                        <h4>Bague</h4>
-                        <h5>6,60 €</h5>                        
-                    </div> -->
                 <div>
         <div>
 
+
+        <?php
+
+
+        ?>
     <link rel="stylesheet" href="style.css">
 
 </body>
